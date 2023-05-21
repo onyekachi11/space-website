@@ -20,8 +20,9 @@ img{
 }
 
 .navlinks-container{
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
+    /* background: rgba(255, 255, 255, 0.04); */
+    /* backdrop-filter: blur(40.7742px); */
+    background-color: rgba(99, 102, 121, 1);
     /* padding: 30px; */
     display: flex;
     justify-content: space-around;
