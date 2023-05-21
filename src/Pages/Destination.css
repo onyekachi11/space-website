@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400&family=Barlow:wght@300&family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    /* background-color: aqua; */
+    background-image: url('../assets/destination/background-destination-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.dest-img{
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+
+
+.dest-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    /* height: 91vh; */
+    /* position: fixed; */
+}
+
+.dest-heading{
+    font-family: 'Barlow Condensed';
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.dest-heading span{
+    opacity: 0.25;
+    font-weight: 700;
+    margin-right: 19px;
+}
+
+.dest-page{
+    /* border: 1px solid white; */
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.dest-links{
+    display: flex;
+    justify-content: space-between;
+    width: 237px;
+    /* margin: 26px auto; */
+}
+
+article a.active{
+    border-bottom:2px solid white ;
+    padding-bottom: 10px;
+}
+
+.dest-links a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Barlow Condensed';
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+}
+
+h1{
+    font-size: 56px;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    margin-top: 25px;
+    /* text-align: start; */
+}
+
+.description{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Barlow';
+    /* margin: 1px 50px; */
+}
+
+.divider{
+    border: 1px solid #383B4B;
+    /* width: 327px; */
+    /* margin: 40px 20px; */
+}
+
+.distance-time{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.distance-time-text{
+    font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 32px;
+
+}
+
+
+@media screen and (max-width:768px) {
+    .dest-page {
+            /* border: 1px solid white; */
+            text-align: center;
+            margin: 0 auto;
+        }
+    
+        .dest-links {
+            margin: 26px auto;
+        }
+
+    .divider {
+        margin: 40px 20px;
+    }
+
+    .description{
+        margin: 1px 50px;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+
+    .dest-container{
+        align-items: start;
+    }
+    .dest-heading span{
+        visibility: visible;
+    }
+
+    .dest-heading{
+        text-align: end !important;
+        /* border: 1px solid white; */
+        width: 272px;
+        display: inline-block;
+    }
+
+    .dest-img{
+        width: 300px;
+    }
+    
+    .dest-links{
+        width: 285px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    h1{
+        font-size: 80px;
+        /* text-align: center; */
+    }
+
+    .description{
+        width: 573px;
+        text-align: center;
+    }
+
+    .divider{
+        width: 537px;
+        margin: 40px auto;
+    }
+
+    .distance-time-container{
+        display: flex;
+        /* border: 1px solid white; */
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .dest-page{
+        display: flex;
+        text-align: start;
+        /* border: 1px solid white; */
+    }
+
+    .dest-text{
+        display: flex;
+        flex-direction: column;
+        align-items:start ;
+        width: 445px;
+        margin-left:150px ;
+    }
+
+    .dest-links{
+        width: 285px;
+        margin: 0;
+    }
+
+    .description{
+        text-align: start;
+        width: 444px;
+    }
+    
+    .divider{
+        width: 445px;
+    }
+
+    .distance-time-text{
+        margin-right:70px ;
+    }
+
+    .dest-heading{
+        margin-top: 76px;
+    }
+
+    .dest-page{
+        margin-top: 80px ;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .dest-text{
+        margin-left: 250px;
+    }
+
+    .dest-img{
+        width: 400px;
+    }
+
+    .dest-text{
+        width: 500px;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+
+    .divider{
+        width: 500px;
+    }
+
+    .description{
+        font-size: 19px;
+    }
+}
+
